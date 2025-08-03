@@ -43,5 +43,5 @@ variable "z" {
 
 #Map output
 output "z_value" {
-value = "Name is ${var.z.name} and age is ${var.z[age]}"
+value = "Name is ${var.z.name} and age is ${var.z["age"]}"
 }
