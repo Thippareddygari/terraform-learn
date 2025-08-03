@@ -17,3 +17,7 @@ output "x_value" {
     value = var.x
 }
 
+output "x_value1" {
+    value = "value of x ${var.x}" 
+}
+
