@@ -18,7 +18,7 @@ output "x_value" {
 }
 
 #combination of strings use "${var.x}"
-output "x_value" {
+output "x_value1" {
     value = "value of x ${var.x}" 
 }
 
