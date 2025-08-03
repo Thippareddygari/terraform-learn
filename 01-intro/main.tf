@@ -17,7 +17,7 @@ output "x_value" {
     value = var.x
 }
 
-output "x_value1" {
+output "x_value" {
     value = "value of x ${var.x}" 
 }
 
