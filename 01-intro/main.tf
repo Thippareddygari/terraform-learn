@@ -45,3 +45,12 @@ variable "z" {
 output "z_value" {
 value = "Name is ${var.z.name} and age is ${var.z["age"]}"
 }
+
+#variables from anothe file
+#tf vars manaully added
+variable "input" {}
+
+output "input" {
+  description = "value to be printed"
+  value = var.input
+}
