@@ -47,10 +47,24 @@ value = "Name is ${var.z.name} and age is ${var.z["age"]}"
 }
 
 #variables from anothe file
-#tf vars manaully added
+#tf vars manaully added meaning this files are loaded to command line by using -var-file option
+#terraform apply -var-file="data.tfvars"
+# or terraform apply -var="input=Hello world" or -var input=hello world
+# or terraform apply -var-file="data.tfvars" -var="input=Hello world
 variable "input" {}
 
 output "input" {
   description = "value to be printed"
   value = var.input
+}
+
+#auto.tfvars file automatically loaded by terraform
+variable "class" {}
+output "class" {
+  value = var.class
+}
+
+variable "trainer" {}
+output "trainer" {
+  value = var.trainer
 }
